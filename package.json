@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "playwright": "npm run build && npm run start && npx playwright test"
+    "pre-play": "npm run build && npm run start",
+    "play": "npx playwright test"
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.0",
@@ -17,7 +18,8 @@
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.2.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "wait-on": "^7.2.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.41.2",
